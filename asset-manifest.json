@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/course-map/static/css/main.4070d756.css",
-    "main.js": "/course-map/static/js/main.1280853f.js",
-    "static/js/787.c41fb1c6.chunk.js": "/course-map/static/js/787.c41fb1c6.chunk.js",
-    "static/media/logo.svg": "/course-map/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/course-map/index.html",
-    "main.4070d756.css.map": "/course-map/static/css/main.4070d756.css.map",
-    "main.1280853f.js.map": "/course-map/static/js/main.1280853f.js.map",
-    "787.c41fb1c6.chunk.js.map": "/course-map/static/js/787.c41fb1c6.chunk.js.map"
+    "main.css": "/CourseMapUNC/static/css/main.4070d756.css",
+    "main.js": "/CourseMapUNC/static/js/main.531a4f43.js",
+    "static/js/787.c41fb1c6.chunk.js": "/CourseMapUNC/static/js/787.c41fb1c6.chunk.js",
+    "static/media/logo.svg": "/CourseMapUNC/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/CourseMapUNC/index.html",
+    "main.4070d756.css.map": "/CourseMapUNC/static/css/main.4070d756.css.map",
+    "main.531a4f43.js.map": "/CourseMapUNC/static/js/main.531a4f43.js.map",
+    "787.c41fb1c6.chunk.js.map": "/CourseMapUNC/static/js/787.c41fb1c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4070d756.css",
-    "static/js/main.1280853f.js"
+    "static/js/main.531a4f43.js"
   ]
 }
