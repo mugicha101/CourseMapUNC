@@ -1,17 +1,58 @@
 * {
     font-family: "Agency FB", serif;
     font-weight: bold;
+    color: black;
 }
 
 .courseNode {
     width: 180px;
     height: 60px;
     background-color: white;
-    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5), inset 3px -3px 5px rgba(0, 0, 0, 0.5), inset -3px 3px 5px rgba(255, 255, 255, 0.5);
     border-style: solid;
     border-width: 2px;
     border-color: black;
     border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5), inset 3px -3px 5px rgba(0, 0, 0, 0.5), inset -3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.courseNode:hover {
+    border-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.courseNode:hover .hoverBox {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.hoverBox {
+    position: absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transform: translateY(-80%);
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background-color: grey;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 85px;
+    margin-top: 40px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid grey;
 }
 
 .courseId {

@@ -54,6 +54,10 @@ addCourse(2, 1, "MATH 381", "Discrete Mathematics", 3, req("MATH 232"));
 addCourse(2, 3, "MATH 347", "Linear Algebra for Applications", 3, req("MATH 232"));
 addCourse(3, 2, "MATH 383", "First Course in Differential Equations", 3, req("MATH 233"));
 
+nodes.sort((a, b) => {
+    return a.position.y - b.position.y;
+});
+
 function App() {
   return (
     <div className="App">

@@ -10,9 +10,12 @@ export function Flow({ nodes, edges}) {
             nodeTypes={nodeTypes}
             nodes={nodes}
             edges={edges}
-            nodesDraggable={false}
+            nodesDraggable={true}
             nodesConnectable={false}
             elementsSelectable={false}
+            onMouseOver={(e) => {
+                e.preventDefault();
+            }}
         >
             <Background variant="lines" gap={25} size={0.25} color="rgb(0, 255, 255)" />
             <MiniMap />
