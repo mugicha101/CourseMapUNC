@@ -40,8 +40,10 @@ export default memo(({ data, isConnectable }) => {
                     {createCredits(data.credits)}
                 </div>
                 <div className="hoverBox">
-                    <div className="box"/>
                     <div className="triangle"/>
+                    <div className="box">
+                        {data.description}
+                    </div>
                 </div>
             </a>
         </div>

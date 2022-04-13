@@ -24,35 +24,43 @@
 
 .courseNode:hover .hoverBox {
     opacity: 1;
-    transform: translateY(-100%);
+    transform: translateY(-2px);
 }
 
 .hoverBox {
-    position: absolute;
+    position: relative;
+    bottom: 0;
     pointer-events: none;
     width: 100%;
-    height: 50px;
+    height: fit-content;
     opacity: 0;
     transition-duration: 0.5s;
-    transform: translateY(-80%);
+    transform: translateY(10px);
+    vertical-align: bottom;
 }
 
 .box {
     position: absolute;
-    width: 100%;
-    height: 45px;
-    background-color: grey;
+    bottom: 10px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 10px;
+    text-align: left;
+    font-weight: normal;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .triangle {
     position: absolute;
+    bottom: 0;
     width: 0;
     height: 0;
     margin-left: 85px;
     margin-top: 40px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid grey;
+    border-top: 10px solid rgba(255, 255, 255, 0.95);;
 }
 
 .courseId {
