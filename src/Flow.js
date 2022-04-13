@@ -9,7 +9,7 @@ const nodeTypes = {
     courseNode: CourseNode
 }
 
-const getData = async function () {
+const getData = async function (department) {
     const nodes = [];
     const edges = [];
     const groupColors = ["black", "red", "blue", "green"]
@@ -49,7 +49,7 @@ const getData = async function () {
     const auth = getAuth(app);
     const db = getFirestore(app);
 
-    const docRef = doc(db, "unc/comp");
+    const docRef = doc(db, department);
     const docSnap = await getDoc(docRef);
     if(docSnap.exists()) {
         for (const [id, data] of Object.entries(docSnap.data())) {
@@ -81,7 +81,7 @@ export function Flow({department="unc/comp"}) {
             if (data == null) {
                 try {
                     setLoading(true);
-                    const data = await getData();
+                    const data = await getData(department);
                     setData(data);
                     setLoading(false);
                 } catch (error) {
