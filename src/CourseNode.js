@@ -3,7 +3,7 @@ import './CourseNode.css';
 import { Handle } from 'react-flow-renderer';
 
 const duplicate = (x, n) => Array.from(new Array(n), () => x);
-const credit = <div className="credit"></div>;
+const credit = <div className="credit"/>;
 const createCredits = (n=0) => duplicate(credit, n);
 
 export default memo(({ data, isConnectable }) => {
@@ -12,22 +12,28 @@ export default memo(({ data, isConnectable }) => {
             <Handle
                 type="target"
                 position="left"
-                style={{ background: '#555' }}
+                style={{
+                    background: "black",
+                    borderColor: "transparent"
+                }}
                 onConnect={(params) => console.log('handle onConnect', params)}
                 isConnectable={isConnectable}
             />
             <Handle
                 type="source"
                 position="right"
-                style={{ background: '#555' }}
+                style={{
+                    background: "black",
+                    borderColor: "transparent"
+                }}
                 onConnect={(params) => console.log('handle onConnect', params)}
                 isConnectable={isConnectable}
             />
             <div className="courseId top-center">
-                {data.courseId}
+                <div className="idBox top-center"><div className="idText">{data.courseId}</div></div>
             </div>
-            <div className="name top-center">
-                {data.name}
+            <div className="nameBox top-center">
+                <div className="name center">{data.name}</div>
             </div>
             <div className="creditGroup middle-left">
                 {createCredits(data.credits)}
